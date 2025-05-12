@@ -1,3 +1,8 @@
+//==============================================================================\
+// PROGRAM TO CALCULATE THE TRAJECTORY, ELECTRIC AND MAGNETIC FIELDS OF N CHARGES\
+//        Version 8.2 (to include many charges) -- by: Agenor (2025)             /
+//==============================================================================/
+
 #include <iostream>
 #include <vector>
 #include <cmath>
