@@ -1,7 +1,9 @@
 # charges
 ----------
 compile with mpicxx -std=c++11 -O3 coulomb_2.cpp -o coulomb -lgsl -lgslcblas
+
 execute with mpirun -np 20 ./coulomb
+
 On a cluster with 20 MPI processes, this program can be run in 40-50 minutes.
 
 ----------
