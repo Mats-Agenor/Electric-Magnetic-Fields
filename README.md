@@ -1,4 +1,10 @@
 # charges
+----------
+compile with mpicxx -std=c++11 -O3 coulomb_2.cpp -o coulomb -lgsl -lgslcblas
+execute with mpirun -np 20 ./coulomb
+On a cluster with 20 MPI processes, this program can be run in 40-50 minutes.
+
+----------
 This C++ program is a parallelized particle simulation designed to model the motion of charged particles under self-consistent electromagnetic fields. It combines finite-time-step integration of Newton's laws with MPI for distributed memory parallelism and OpenMP for shared memory acceleration. Particles interact by directly computing electric and magnetic fields, without using grid-based methods. The goal is to compute the collective dynamics of many particles (e.g. 10,000) evolving over time, influenced by their mutual electromagnetic interactions.
 
 Overview of Key Features
